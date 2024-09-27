@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HI-Toyz Register</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Varela+Round&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="header">
+        <a href="hitoyz.html"><img src="./logo/logo-no-background.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a href="hitoyz.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="event.html">Event</a></li>
+                <li><a class="active" href="register.html">Register Us</a></li>
+            </ul>
+        </div>
+        <div id="mobile">
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="register">
+        <div class="regi-con">
+            <div class="title"><h3>Registration</h3></div>
+            <form action="./register.html" id="form" onsubmit="validateForm(event)" method="post">
+                <div class="user-details">
+                    <div class="inputbox">
+                        <span class="details">Name</span>
+                        <input type="text" placeholder="Enter your name" id="name" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Email</span>
+                        <input type="email" placeholder="Enter your email" id="email" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Password</span>
+                        <input type="password" placeholder="Enter password" id="pass" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Confirm Password</span>
+                        <input type="password" placeholder="Confirm Password" id="confpass" required>
+                    </div>
+                    <div class="inputbox">
+                        <span class="details">Date of Birth</span>
+                        <input type="date" placeholder="Confirm Password" id="dob" required>
+                    </div>
+                </div>
+                <div class="gender-details">
+                    <span class="gender-title">Gender</span> <br> <br>
+                    <input type="radio" name="gender" id="maleRadio" required>
+                    <label class="gender-text" for="gender">Male</label>
+                    <input type="radio" name="gender" id="femaleRadio" required>
+                    <label class="gender-text" for="gender">Female</label> 
+                    <input type="radio" name="gender" id="prefnot" required>
+                    <label class="gender-text" for="gender">Prefer not to say</label>
+                </div>
+                <div class="inputcheck">
+                    <input type="checkbox" name="checkbox" id="checkbox" required>
+                    <span class="details">I have read and agree to the Terms and Conditions</span>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Register" id="submit" required>
+                </div>
+
+                <p id="errorMessage" style="color:red;"></p>
+            </form>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <a href="hitoyz.html"><img src="./logo/logo-no-background.png" alt=""></a>
+            <h4>Contact us</h4>
+            <p><strong>Address: </strong>203 Kemanggisan Street, West Jakarta 12029, Indonesia</p>
+            <p><strong>Phone: </strong>0871-8888-7777</p>
+            <p><strong>Email: </strong>hi.toyz@gmail.com</p>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="hitoyz.html">About us</a>
+            <a href="#">T&C</a>
+            <a href="#">Privacy</a>
+        </div>
+        <div class="inst">
+            <h4>Install our App</h4>
+            <div class="row">
+                <a href="#"><img src="./logo/gstore.jpg" alt=""></a>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>© 2023 HI-Toyz Inc All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js "></script>
+</body>
+
+</html>
